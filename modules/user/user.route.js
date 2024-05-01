@@ -1,3 +1,4 @@
+// User Route
 const { userChecker, adminChecker } = require('../../helper/authChecker');
 const tokenGenerator = require('../../helper/tokenGenerator');
 const User = require('./user.model');
