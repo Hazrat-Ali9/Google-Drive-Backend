@@ -1,4 +1,3 @@
-//File Model 
 const mongoose = require("mongoose");
 
 const fileSchema = new mongoose.Schema({
@@ -35,13 +34,16 @@ const fileSchema = new mongoose.Schema({
         required: true
     },
     folder: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Folder"
+        type: String,
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
-    }, 
+    },
+    share: {
+        type: Array,
+        default: []
+    },
     deleted: {
         type: Boolean,
         default: false

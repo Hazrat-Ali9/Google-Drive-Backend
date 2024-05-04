@@ -1,4 +1,3 @@
-// Folder Model 
 const mongoose = require("mongoose");
 
 const folderSchema = new mongoose.Schema({
@@ -6,9 +5,13 @@ const folderSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    parent: {
+    code: {
         type: String,
         required: true
+    },
+    parent: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Folder"
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,

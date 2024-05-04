@@ -1,4 +1,3 @@
-// Token Genarator
 const jwt = require('jsonwebtoken');
 
 

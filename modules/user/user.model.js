@@ -1,4 +1,3 @@
-// User Model
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
@@ -13,6 +12,17 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true
+    },
+    code: {
+        type: String
+    },
+    isVerified: {
+        type: Boolean,
+        default: false
+    },
+    isMailSent: {
+        type: Boolean,
+        default: false
     },
     role: {
         type: String,
@@ -37,6 +47,9 @@ const userSchema = new mongoose.Schema({
     },
     others: {
         type: Object,
+    },
+    session: {
+        type: Object
     }
 
 }, { timestamps: true })

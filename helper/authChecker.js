@@ -1,4 +1,4 @@
-// Auth Cheaker 
+// Auth Checker
 const jwt = require('jsonwebtoken');
 const User = require('../modules/user/user.model');
 const secret = process.env.JWT_SECRET

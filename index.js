@@ -1,4 +1,3 @@
-// index js
 const express = require("express");
 const cors = require("cors");
 const bodyparser = require("body-parser");
@@ -33,6 +32,10 @@ app.use("/api/user", require("./modules/user/user.route"));
 app.use("/api/file", require("./modules/files/file.router"));
 // folders
 app.use("/api/folder", require("./modules/folders/folder.route"));
+
+// share
+
+app.use('/api/share', require('./modules/share/share.route'))
 
 // read uploaded files
 app.use('/uploads', express.static('uploads'));
