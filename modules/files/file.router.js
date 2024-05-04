@@ -1,3 +1,4 @@
+// File Router
 const { uploadFiles, uploadFile } = require('../../helper/multer.conf');
 const { userChecker, adminChecker } = require("../../helper/authChecker");
 const File = require('./file.model');
