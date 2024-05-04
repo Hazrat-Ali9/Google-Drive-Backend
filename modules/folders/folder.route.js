@@ -1,3 +1,4 @@
+// Folder Route
 const { userChecker, adminChecker } = require('../../helper/authChecker');
 const File = require('../files/file.model');
 const User = require('../user/user.model');
