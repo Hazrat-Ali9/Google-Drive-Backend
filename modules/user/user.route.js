@@ -1,3 +1,4 @@
+// User Route
 const { userChecker, adminChecker } = require('../../helper/authChecker');
 const transporter = require('../../helper/nodemailer');
 const sessions = require('../../helper/sessions');
