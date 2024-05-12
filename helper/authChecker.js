@@ -40,7 +40,7 @@ const adminChecker = async (req, res, next) => {
     req.user = user
     next()
 }
-
+// Jwt Verify Token
 module.exports = {
     userChecker,
     adminChecker
