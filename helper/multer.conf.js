@@ -2,7 +2,7 @@
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-// generate 5 digit random number
+// Generate 5 Digit Random Number
 const generateRandomNumber = () => {
     return Math.floor(100000 + Math.random() * 10);
 }
