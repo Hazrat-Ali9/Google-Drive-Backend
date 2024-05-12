@@ -19,7 +19,7 @@ const userChecker = async (req, res, next) => {
     req.user = user
     next()
 }
-
+// Admin Cheaker
 const adminChecker = async (req, res, next) => {
     const token = req.headers.token
     if (!token) {
