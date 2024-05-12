@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 
 
 const secret = process.env.JWT_SECRET
-
+// JWT Secret
 const tokenGenerator = async (user) => {
     const accessToken = jwt.sign({
         id: user._id
