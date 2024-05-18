@@ -31,7 +31,7 @@ connectDB();
 app.use("/api/user", require("./modules/user/user.route"));
 // Upload Files
 app.use("/api/file", require("./modules/files/file.router"));
-// folders
+// Folders
 app.use("/api/folder", require("./modules/folders/folder.route"));
 
 // share
