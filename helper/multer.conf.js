@@ -13,7 +13,7 @@ const uploadFiles = multer({
             if (!fs.existsSync(destination)) {
                 fs.mkdirSync(destination);
             }
-            cb(null, destination)
+            cb(null, destination) // File Function
         },
         filename: function (req, file, cb) {
             cb(null, generateRandomNumber() + '-' + file.originalname);
