@@ -38,7 +38,7 @@ app.use("/api/folder", require("./modules/folders/folder.route"));
 
 app.use('/api/share', require('./modules/share/share.route'))
 
-// read uploaded files
+// Read Uploaded Files
 app.use('/uploads', express.static('uploads'));
 // start server
 
