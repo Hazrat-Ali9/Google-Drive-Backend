@@ -43,7 +43,7 @@ const fileSchema = new mongoose.Schema({
     },
     share: {
         type: Array,
-        default: []
+        default: [] // schema Objectid
     },
     deleted: {
         type: Boolean,
