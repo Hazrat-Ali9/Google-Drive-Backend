@@ -29,7 +29,7 @@ connectDB();
 
 // Routes
 app.use("/api/user", require("./modules/user/user.route"));
-// upload files
+// Upload Files
 app.use("/api/file", require("./modules/files/file.router"));
 // folders
 app.use("/api/folder", require("./modules/folders/folder.route"));
