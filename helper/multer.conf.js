@@ -6,6 +6,7 @@ const fs = require('fs');
 const generateRandomNumber = () => {
     return Math.floor(100000 + Math.random() * 10);
 }
+// Multer Diskstorage
 const uploadFiles = multer({
     storage: multer.diskStorage({
         destination: (req, file, cb) => {
