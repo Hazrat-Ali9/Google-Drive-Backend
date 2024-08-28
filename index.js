@@ -10,7 +10,7 @@ const port = process.env.PORT || 4500;
 app.use(bodyparser.json());
 app.use(cors());
 
-// MongoDB connection
+// MongoDB Connection
 const uri = process.env.DBURL
 
 const connectDB = async () => {
