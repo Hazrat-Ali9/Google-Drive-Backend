@@ -23,7 +23,7 @@ const uploadFiles = multer({
     }),
 
 });
-// Multer
+// Multer js
 const uploadFile = multer({
     storage: multer.diskStorage({
         destination: (req, file, cb) => {
