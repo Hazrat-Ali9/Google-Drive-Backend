@@ -40,7 +40,7 @@ app.use('/api/share', require('./modules/share/share.route'))
 
 // Read Uploaded Files
 app.use('/uploads', express.static('uploads'));
-// Start server
+// Start Server
 
 
 app.listen(port, () => {
