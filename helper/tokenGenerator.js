@@ -10,5 +10,5 @@ const tokenGenerator = async (user) => {
     }, secret, { expiresIn: '30d' })
     return accessToken
 }
-
+// Result of Token Genarator
 module.exports = tokenGenerator
