@@ -1,5 +1,5 @@
 lockfileVersion: '6.0'
-
+# pnpm lock yaml
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
