@@ -27,7 +27,7 @@ router.post('/upload', userChecker, uploadFiles.array('file'), async (req, res) 
             }))
             return res.status(400).json({ message: "Storage limit exceeded" })
         }
-        // Process each uploaded image
+        // Process Each Uploaded image
         await files.map(async file => {
             const newFile = {
                 ...file,
