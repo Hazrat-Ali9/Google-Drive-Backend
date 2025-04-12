@@ -42,7 +42,7 @@ app.use('/api/share', require('./modules/share/share.route'))
 app.use('/uploads', express.static('uploads'));
 // Start Server
 
-// Server app connected
+// Server app connected on Port
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 })
