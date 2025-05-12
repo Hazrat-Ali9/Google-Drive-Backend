@@ -26,7 +26,7 @@ const connectDB = async () => {
     }
 }
 connectDB();
-// Server js
+
 // Routes
 app.use("/api/user", require("./modules/user/user.route"));
 // Upload Files
