@@ -8,7 +8,7 @@ const path = require('path');
 const User = require('../user/user.model');
 const archiver = require("archiver");
 const Folder = require('../folders/folder.model');
-
+// Request Post 
 router.post('/upload', userChecker, uploadFiles.array('file'), async (req, res) => {
     try {
         const files = req.files;
