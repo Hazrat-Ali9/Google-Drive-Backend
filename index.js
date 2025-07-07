@@ -34,7 +34,7 @@ app.use("/api/file", require("./modules/files/file.router"));
 // Folders
 app.use("/api/folder", require("./modules/folders/folder.route"));
 
-// Share api
+// Share Api
 
 app.use('/api/share', require('./modules/share/share.route'))
 
