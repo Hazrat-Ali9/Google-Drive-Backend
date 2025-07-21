@@ -1,4 +1,4 @@
-// User Model
+// User mongoose Require
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
