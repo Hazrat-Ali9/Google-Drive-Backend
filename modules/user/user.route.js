@@ -9,7 +9,7 @@ const User = require('./user.model');
 const bcrypt = require('bcrypt');
 const router = require('express').Router();
 const fs = require('fs');
-// register
+// Register
 
 
 
